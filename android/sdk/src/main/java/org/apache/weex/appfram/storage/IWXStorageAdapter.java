@@ -18,8 +18,9 @@
  */
 package org.apache.weex.appfram.storage;
 
-import java.util.Map;
 import org.apache.weex.InitConfig;
+
+import java.util.Map;
 
 /**
  * interface for {@link WXStorageModule} class.

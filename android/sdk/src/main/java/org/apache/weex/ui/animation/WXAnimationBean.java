@@ -19,19 +19,22 @@
 package org.apache.weex.ui.animation;
 
 import android.animation.PropertyValuesHolder;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.util.Property;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.common.Constants;
 import org.apache.weex.common.Constants.Name;
 import org.apache.weex.utils.FunctionParser;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

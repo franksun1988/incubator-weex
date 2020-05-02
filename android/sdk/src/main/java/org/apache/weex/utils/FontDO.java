@@ -22,10 +22,12 @@ import android.graphics.Typeface;
 import android.net.Uri;
 import android.text.TextUtils;
 import android.util.Base64;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.adapter.URIAdapter;
 import org.apache.weex.common.Constants;
+
 import java.io.File;
 
 public class FontDO {

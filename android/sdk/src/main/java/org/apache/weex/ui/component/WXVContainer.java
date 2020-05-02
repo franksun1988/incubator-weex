@@ -20,13 +20,14 @@ package org.apache.weex.ui.component;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.Nullable;
-import android.support.v4.view.ViewCompat;
 import android.util.Pair;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
+import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.JSMethod;

@@ -18,11 +18,6 @@
  */
 package org.apache.weex.ui.view.border;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
-
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
@@ -35,15 +30,22 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.SparseIntArray;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.dom.CSSShorthand.CORNER;
 import org.apache.weex.dom.CSSShorthand.EDGE;
+import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXViewUtils;
-import org.apache.weex.ui.component.WXComponent;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Locale;
 
 import static org.apache.weex.dom.CSSShorthand.CORNER.ALL;
 import static org.apache.weex.dom.CSSShorthand.CORNER.BORDER_BOTTOM_LEFT;

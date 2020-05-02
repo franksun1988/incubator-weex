@@ -18,8 +18,10 @@
  */
 package org.apache.weex.ui.component.basic;
 
-import android.support.annotation.NonNull;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+
 import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.dom.WXAttr;
 import org.apache.weex.dom.WXEvent;
@@ -28,6 +30,7 @@ import org.apache.weex.ui.action.BasicComponentData;
 import org.apache.weex.ui.action.GraphicPosition;
 import org.apache.weex.ui.action.GraphicSize;
 import org.apache.weex.ui.component.WXComponent;
+
 import java.util.Map;
 import java.util.Set;
 

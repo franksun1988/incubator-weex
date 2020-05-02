@@ -21,6 +21,7 @@ package org.apache.weex.dom.binding;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.el.parse.Parser;
 import org.apache.weex.el.parse.Token;

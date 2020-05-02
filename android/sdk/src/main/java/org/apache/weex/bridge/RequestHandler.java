@@ -18,11 +18,11 @@
  */
 package org.apache.weex.bridge;
 
-import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;
-
 import android.net.Uri;
-import android.support.annotation.Keep;
 import android.text.TextUtils;
+
+import androidx.annotation.Keep;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXHttpListener;
 import org.apache.weex.WXSDKInstance;
@@ -36,10 +36,12 @@ import org.apache.weex.common.WXRequest;
 import org.apache.weex.common.WXResponse;
 import org.apache.weex.http.WXHttpUtil;
 import org.apache.weex.utils.WXExceptionUtils;
-
 import org.apache.weex.utils.WXLogUtils;
+
 import java.util.HashMap;
 import java.util.Locale;
+
+import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;
 
 public class RequestHandler {
 

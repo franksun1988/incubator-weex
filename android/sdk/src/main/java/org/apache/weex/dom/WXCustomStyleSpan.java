@@ -21,6 +21,7 @@ package org.apache.weex.dom;
 import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.text.style.MetricAffectingSpan;
+
 import org.apache.weex.utils.TypefaceUtil;
 
 public class WXCustomStyleSpan extends MetricAffectingSpan {

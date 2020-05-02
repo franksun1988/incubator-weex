@@ -21,8 +21,6 @@ package org.apache.weex.layout.measurefunc;
 import android.graphics.Canvas;
 import android.os.Build;
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.text.Layout;
 import android.text.Spannable;
@@ -34,9 +32,12 @@ import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.text.style.AlignmentSpan;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import android.support.annotation.WorkerThread;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.annotation.WorkerThread;
 
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;

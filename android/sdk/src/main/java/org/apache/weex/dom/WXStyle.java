@@ -19,19 +19,22 @@
 package org.apache.weex.dom;
 
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import android.support.v4.util.ArrayMap;
 import android.text.Layout;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.collection.ArrayMap;
+
 import org.apache.weex.common.Constants;
 import org.apache.weex.dom.binding.ELUtils;
 import org.apache.weex.ui.component.WXText;
 import org.apache.weex.ui.component.WXTextDecoration;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;

@@ -18,13 +18,13 @@
  */
 package org.apache.weex.ui.component.pesudo;
 
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
 
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.PSEUDO;
 
 import java.util.Map;
-import org.apache.weex.common.Constants.PSEUDO;
 
 /**
  * Created by sospartan on 05/01/2017.

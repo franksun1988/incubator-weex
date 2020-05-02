@@ -18,8 +18,8 @@
  */
 package org.apache.weex.ui.component.list;
 
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.apache.weex.ui.component.WXComponent;
 

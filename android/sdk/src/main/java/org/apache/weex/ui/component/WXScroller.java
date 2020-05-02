@@ -26,8 +26,6 @@ import android.graphics.Rect;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewCompat;
 import android.text.TextUtils;
 import android.view.GestureDetector;
 import android.view.Gravity;
@@ -37,6 +35,10 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
+
+import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;
@@ -60,6 +62,7 @@ import org.apache.weex.ui.view.refresh.wrapper.BounceScrollerView;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.HashMap;

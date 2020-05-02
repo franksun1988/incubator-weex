@@ -19,7 +19,8 @@
 package org.apache.weex.ui.view.border;
 
 import android.graphics.RectF;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 class BottomRightCorner extends BorderCorner {
 

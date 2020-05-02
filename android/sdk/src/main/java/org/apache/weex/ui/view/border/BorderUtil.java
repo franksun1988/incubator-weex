@@ -19,9 +19,11 @@
 
 package org.apache.weex.ui.view.border;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.SparseIntArray;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import org.apache.weex.dom.CSSShorthand;
 
 class BorderUtil {

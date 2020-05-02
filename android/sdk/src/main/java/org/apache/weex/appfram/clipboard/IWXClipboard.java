@@ -18,7 +18,7 @@
  */
 package org.apache.weex.appfram.clipboard;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import org.apache.weex.bridge.JSCallback;
 

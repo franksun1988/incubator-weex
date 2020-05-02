@@ -19,6 +19,7 @@
 package org.apache.weex.bridge;
 
 import com.alibaba.fastjson.JSON;
+
 import org.apache.weex.utils.WXWsonJSONSwitch;
 import org.apache.weex.wson.WsonUtils;
 

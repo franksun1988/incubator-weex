@@ -20,16 +20,18 @@ package org.apache.weex.ui.component.list;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.RestrictTo;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.Name;
 import org.apache.weex.dom.WXAttr;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.ui.ComponentCreator;
@@ -42,7 +44,6 @@ import org.apache.weex.ui.view.WXFrameLayout;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
-import org.apache.weex.common.Constants.Name;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.LinkedList;

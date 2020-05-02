@@ -19,13 +19,14 @@
 package org.apache.weex.ui.component;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.common.WXThread;
@@ -40,6 +41,8 @@ import org.apache.weex.utils.WXViewUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+
+;
 
 /**
  * Known Issus: In auto play mode, neighbor view not scaled or aplhaed rarely.

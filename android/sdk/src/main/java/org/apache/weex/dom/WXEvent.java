@@ -18,10 +18,10 @@
  */
 package org.apache.weex.dom;
 
-import android.support.v4.util.ArrayMap;
-
+import androidx.collection.ArrayMap;
 
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.dom.binding.ELUtils;
 import org.apache.weex.dom.binding.JSONUtils;
 

@@ -19,10 +19,13 @@
 package org.apache.weex.ui.component.list;
 
 import android.content.Context;
-import android.support.v4.util.ArrayMap;
-import android.support.v7.widget.PagerSnapHelper;
 import android.text.TextUtils;
+
+import androidx.collection.ArrayMap;
+import androidx.recyclerview.widget.PagerSnapHelper;
+
 import com.alibaba.fastjson.JSON;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;
 import org.apache.weex.common.Constants;
@@ -43,6 +46,7 @@ import org.apache.weex.ui.view.refresh.wrapper.BounceRecyclerView;
 import org.apache.weex.utils.WXExceptionUtils;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.List;

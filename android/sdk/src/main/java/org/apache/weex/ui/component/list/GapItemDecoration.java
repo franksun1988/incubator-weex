@@ -19,9 +19,10 @@
 package org.apache.weex.ui.component.list;
 
 import android.graphics.Rect;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.utils.WXViewUtils;

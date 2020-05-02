@@ -17,9 +17,12 @@
  * under the License.
  */
 package org.apache.weex;
-import android.util.Pair;
+
 import android.text.TextUtils;
+import android.util.Pair;
+
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.adapter.IWXUserTrackAdapter;
 import org.apache.weex.bridge.ModuleFactory;
 import org.apache.weex.bridge.WXEaglePlugin;
@@ -27,8 +30,7 @@ import org.apache.weex.common.WXRenderStrategy;
 import org.apache.weex.ui.IFComponentHolder;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXSoInstallMgrSdk;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

@@ -23,6 +23,7 @@ import org.apache.weex.bridge.WXJSObject;
 import org.apache.weex.bridge.WXParams;
 import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.layout.ContentBoxMeasurement;
+
 import java.util.HashMap;
 import java.util.HashSet;
 

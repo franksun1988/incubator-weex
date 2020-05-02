@@ -236,11 +236,12 @@ android {
 
 dependencies {
     //noinspection GradleDependency
-    compileOnly "com.android.support:recyclerview-v7:${project.supportLibVersion}"
+    compileOnly "androidx.recyclerview:recyclerview:1.1.0"
     //noinspection GradleDependency
-    compileOnly "com.android.support:support-v4:${project.supportLibVersion}"
+    compileOnly "androidx.legacy:legacy-support-v4:1.0.0"
     //noinspection GradleDependency
-    compileOnly "com.android.support:appcompat-v7:${project.supportLibVersion}"
+    compileOnly "androidx.appcompat:appcompat:1.1.0"
+    compileOnly "androidx.annotation:annotation:1.1.0"
     compileOnly "com.alibaba:fastjson:${project.fastjsonLibVersion}"
 
     testImplementation "com.alibaba:fastjson:${project.fastjsonLibVersion}"

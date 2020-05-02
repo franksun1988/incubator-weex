@@ -18,7 +18,8 @@
  */
 package org.apache.weex;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
 import org.apache.weex.adapter.ClassLoaderAdapter;
 import org.apache.weex.adapter.IDrawableLoader;
 import org.apache.weex.adapter.IWXHttpAdapter;
@@ -32,6 +33,7 @@ import org.apache.weex.adapter.URIAdapter;
 import org.apache.weex.appfram.storage.IWXStorageAdapter;
 import org.apache.weex.appfram.websocket.IWebSocketAdapterFactory;
 import org.apache.weex.performance.IApmGenerator;
+
 import java.util.LinkedList;
 import java.util.List;
 

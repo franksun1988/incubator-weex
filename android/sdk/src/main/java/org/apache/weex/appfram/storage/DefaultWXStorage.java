@@ -24,7 +24,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteFullException;
 import android.database.sqlite.SQLiteStatement;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import org.apache.weex.common.WXThread;
 import org.apache.weex.utils.WXLogUtils;

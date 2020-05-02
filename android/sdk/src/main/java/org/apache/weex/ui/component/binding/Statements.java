@@ -19,11 +19,13 @@
 package org.apache.weex.ui.component.binding;
 
 import android.os.Looper;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
+
+import androidx.collection.ArrayMap;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.bridge.EventResult;
 import org.apache.weex.bridge.WXBridgeManager;

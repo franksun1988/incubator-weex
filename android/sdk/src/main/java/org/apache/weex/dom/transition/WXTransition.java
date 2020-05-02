@@ -26,17 +26,19 @@ import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
-import android.support.v4.util.ArrayMap;
-import android.support.v4.view.animation.PathInterpolatorCompat;
 import android.text.TextUtils;
 import android.util.Property;
 import android.view.View;
 import android.view.animation.Interpolator;
 
+import androidx.collection.ArrayMap;
+import androidx.core.view.animation.PathInterpolatorCompat;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.TimeFunction;
 import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.ui.animation.BackgroundColorProperty;
 import org.apache.weex.ui.animation.TransformParser;
@@ -54,7 +56,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
-import org.apache.weex.common.Constants.TimeFunction;
 
 /**
  *   transition on dom thread

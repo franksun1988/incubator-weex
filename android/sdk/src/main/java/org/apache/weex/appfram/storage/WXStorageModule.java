@@ -18,12 +18,13 @@
  */
 package org.apache.weex.appfram.storage;
 
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
+import androidx.annotation.Nullable;
+
 import org.apache.weex.WXSDKEngine;
-import org.apache.weex.bridge.JSCallback;
 import org.apache.weex.annotation.JSMethod;
+import org.apache.weex.bridge.JSCallback;
 
 import java.util.Map;
 

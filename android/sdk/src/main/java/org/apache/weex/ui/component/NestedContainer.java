@@ -19,6 +19,7 @@
 package org.apache.weex.ui.component;
 
 import android.view.ViewGroup;
+
 import org.apache.weex.WXSDKInstance;
 
 /**

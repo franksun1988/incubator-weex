@@ -19,10 +19,11 @@
 package org.apache.weex.ui;
 
 import android.opengl.GLES10;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
 import android.text.TextUtils;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.common.WXErrorCode;

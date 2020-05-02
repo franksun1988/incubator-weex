@@ -24,7 +24,6 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
 
-
 import org.apache.weex.render.WXAbstractRenderContainer;
 
 /**

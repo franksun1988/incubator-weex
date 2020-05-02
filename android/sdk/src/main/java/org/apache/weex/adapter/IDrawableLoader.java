@@ -20,7 +20,8 @@
 package org.apache.weex.adapter;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 public interface IDrawableLoader {
 

@@ -18,7 +18,8 @@
  */
 package org.apache.weex.ui.action;
 
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;
@@ -26,6 +27,7 @@ import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.ui.component.WXComponentFactory;
 import org.apache.weex.ui.component.WXVContainer;
+
 import java.util.Map;
 import java.util.Set;
 

@@ -22,8 +22,10 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
+
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+
 import org.apache.weex.adapter.IDrawableLoader;
 import org.apache.weex.adapter.IWXHttpAdapter;
 import org.apache.weex.adapter.IWXImgLoaderAdapter;
@@ -84,8 +86,8 @@ import org.apache.weex.ui.component.list.WXListComponent;
 import org.apache.weex.ui.component.list.template.WXRecyclerTemplateList;
 import org.apache.weex.ui.component.richtext.WXRichText;
 import org.apache.weex.ui.config.AutoScanConfigRegister;
-import org.apache.weex.ui.module.WXDeviceInfoModule;
 import org.apache.weex.ui.module.ConsoleLogModule;
+import org.apache.weex.ui.module.WXDeviceInfoModule;
 import org.apache.weex.ui.module.WXLocaleModule;
 import org.apache.weex.ui.module.WXMetaModule;
 import org.apache.weex.ui.module.WXModalUIModule;
@@ -97,6 +99,7 @@ import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXSoInstallMgrSdk;
 import org.apache.weex.utils.batch.BatchOperationHelper;
 import org.apache.weex.utils.cache.RegisterCache;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;

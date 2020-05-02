@@ -18,10 +18,10 @@
  */
 package org.apache.weex.http;
 
+import org.apache.weex.common.WXRequest;
+
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.weex.common.*;
-import org.apache.weex.common.WXRequest;
 
 /**
  * Created by sospartan on 5/19/16.

@@ -28,13 +28,16 @@ import android.text.TextUtils;
 import android.view.Gravity;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import com.alibaba.fastjson.JSONObject;
+
+import org.apache.weex.WXSDKEngine.DestroyableModule;
 import org.apache.weex.annotation.JSMethod;
 import org.apache.weex.bridge.JSCallback;
 import org.apache.weex.utils.WXLogUtils;
+
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.weex.WXSDKEngine.DestroyableModule;
 
 
 /**

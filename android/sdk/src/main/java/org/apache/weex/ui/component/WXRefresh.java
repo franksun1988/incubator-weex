@@ -19,8 +19,9 @@
 package org.apache.weex.ui.component;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;
@@ -29,12 +30,12 @@ import org.apache.weex.ui.action.BasicComponentData;
 import org.apache.weex.ui.component.list.WXListComponent;
 import org.apache.weex.ui.view.WXFrameLayout;
 import org.apache.weex.ui.view.WXRefreshLayout;
+import org.apache.weex.ui.view.refresh.core.WXSwipeLayout.WXOnRefreshListener;
 import org.apache.weex.ui.view.refresh.wrapper.BaseBounceView;
 import org.apache.weex.utils.WXUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.weex.ui.view.refresh.core.WXSwipeLayout.WXOnRefreshListener;
 
 /**
  * div component

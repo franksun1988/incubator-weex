@@ -24,11 +24,11 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Paint.Style;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
+
+import androidx.viewpager.widget.ViewPager;
 
 import org.apache.weex.ui.view.gesture.WXGesture;
 import org.apache.weex.ui.view.gesture.WXGestureObservable;
@@ -60,7 +60,7 @@ public class WXBaseCircleIndicator extends FrameLayout implements WXGestureObser
   private int fillColor = Color.DKGRAY;
   private int realCurrentItem;
 
-  private OnPageChangeListener mListener;
+  private ViewPager.OnPageChangeListener mListener;
 
 
   public WXBaseCircleIndicator(Context context) {

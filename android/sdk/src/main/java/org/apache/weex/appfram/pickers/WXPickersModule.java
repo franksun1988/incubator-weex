@@ -22,9 +22,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AlertDialog;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,6 +31,10 @@ import android.widget.Button;
 import android.widget.Checkable;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 
 import org.apache.weex.annotation.JSMethod;
 import org.apache.weex.bridge.JSCallback;

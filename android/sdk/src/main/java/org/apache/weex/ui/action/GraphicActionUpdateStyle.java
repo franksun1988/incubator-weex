@@ -18,7 +18,7 @@
  */
 package org.apache.weex.ui.action;
 
-import android.support.v4.util.ArrayMap;
+import androidx.collection.ArrayMap;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;

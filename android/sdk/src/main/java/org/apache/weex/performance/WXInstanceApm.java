@@ -18,17 +18,12 @@
  */
 package org.apache.weex.performance;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArraySet;
-
 import android.graphics.Rect;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
 import android.util.Log;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
@@ -40,6 +35,12 @@ import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.utils.WXExceptionUtils;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 public class WXInstanceApm {
 

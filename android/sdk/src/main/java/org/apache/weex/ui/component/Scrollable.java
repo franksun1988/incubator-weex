@@ -20,8 +20,9 @@ package org.apache.weex.ui.component;
 
 import android.view.ViewGroup;
 
-import java.util.Map;
 import org.apache.weex.common.Constants.Orientation;
+
+import java.util.Map;
 
 /**
  * Created by sospartan on 7/5/16.

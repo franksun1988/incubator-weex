@@ -16,10 +16,8 @@
  */
 package org.apache.weex.performance;
 
-import java.util.Iterator;
-import java.util.List;
-
 import android.util.Log;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
@@ -29,6 +27,9 @@ import org.apache.weex.common.WXJSExceptionInfo;
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.utils.WXUtils;
 import org.json.JSONObject;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author zhongcang

@@ -25,8 +25,10 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.HorizontalScrollView;
+
 import org.apache.weex.ui.view.gesture.WXGesture;
 import org.apache.weex.ui.view.gesture.WXGestureObservable;
+
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 

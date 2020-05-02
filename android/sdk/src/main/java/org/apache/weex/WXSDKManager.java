@@ -19,23 +19,24 @@
 package org.apache.weex;
 
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.apache.weex.adapter.ClassLoaderAdapter;
 import org.apache.weex.adapter.DefaultUriAdapter;
 import org.apache.weex.adapter.DefaultWXHttpAdapter;
-import org.apache.weex.adapter.IWXConfigAdapter;
 import org.apache.weex.adapter.ICrashInfoReporter;
 import org.apache.weex.adapter.IDrawableLoader;
-import org.apache.weex.adapter.IWXJscProcessManager;
 import org.apache.weex.adapter.ITracingAdapter;
 import org.apache.weex.adapter.IWXAccessibilityRoleAdapter;
+import org.apache.weex.adapter.IWXConfigAdapter;
 import org.apache.weex.adapter.IWXHttpAdapter;
 import org.apache.weex.adapter.IWXImgLoaderAdapter;
 import org.apache.weex.adapter.IWXJSExceptionAdapter;
 import org.apache.weex.adapter.IWXJsFileLoaderAdapter;
+import org.apache.weex.adapter.IWXJscProcessManager;
 import org.apache.weex.adapter.IWXSoLoaderAdapter;
 import org.apache.weex.adapter.IWXUserTrackAdapter;
 import org.apache.weex.adapter.URIAdapter;

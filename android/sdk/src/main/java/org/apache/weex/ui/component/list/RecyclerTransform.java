@@ -18,7 +18,7 @@
  */
 package org.apache.weex.ui.component.list;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.apache.weex.common.Constants;
 import org.apache.weex.ui.view.listview.adapter.TransformItemDecoration;

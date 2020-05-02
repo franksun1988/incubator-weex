@@ -20,8 +20,9 @@ package org.apache.weex.ui.view.refresh.wrapper;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
+
+import androidx.annotation.Nullable;
 
 import org.apache.weex.ui.component.list.ListComponentView;
 import org.apache.weex.ui.component.list.StickyHeaderHelper;

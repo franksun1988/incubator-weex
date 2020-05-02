@@ -21,12 +21,15 @@ package org.apache.weex.render;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.FrameLayout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import org.apache.weex.WXSDKInstance;
+
 import java.lang.ref.WeakReference;
 
 public class WXAbstractRenderContainer extends FrameLayout {

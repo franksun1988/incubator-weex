@@ -22,25 +22,26 @@ package org.apache.weex.ui.component;
 import android.content.Context;
 import android.media.MediaPlayer;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import androidx.annotation.NonNull;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
-import org.apache.weex.annotation.Component;
 import org.apache.weex.adapter.URIAdapter;
+import org.apache.weex.annotation.Component;
 import org.apache.weex.common.Constants;
 import org.apache.weex.ui.action.BasicComponentData;
 import org.apache.weex.ui.view.WXVideoView;
+import org.apache.weex.ui.view.WXVideoView.Wrapper;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.weex.ui.view.WXVideoView.Wrapper;
 
 @Component(lazyload = false)
 

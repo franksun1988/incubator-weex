@@ -18,8 +18,9 @@
  */
 package org.apache.weex.common;
 
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 
 public interface OnWXScrollListener {

@@ -23,9 +23,11 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Looper;
 import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.support.v4.util.LruCache;
 import android.text.TextUtils;
+
+import androidx.annotation.Nullable;
+import androidx.collection.LruCache;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.adapter.IWXConfigAdapter;

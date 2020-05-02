@@ -22,6 +22,7 @@ package org.apache.weex.ui.animation;
 import android.util.Property;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.ui.view.IRenderResult;
 

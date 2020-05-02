@@ -18,17 +18,20 @@
  */
 package org.apache.weex.jsEngine;
 
-import static org.apache.weex.jsEngine.CallBackCode.ERROR_JSENGINE_CRASHED;
-import static org.apache.weex.jsEngine.CallBackCode.JSENGINE_INIT_FINISH;
-
 import android.annotation.SuppressLint;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
+
+import org.apache.weex.WXSDKEngine;
+import org.apache.weex.utils.WXLogUtils;
+
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.WXSDKEngine;
-import org.apache.weex.utils.WXLogUtils;
+
+import static org.apache.weex.jsEngine.CallBackCode.ERROR_JSENGINE_CRASHED;
+import static org.apache.weex.jsEngine.CallBackCode.JSENGINE_INIT_FINISH;
 
 public class JSEngine implements Serializable {
     private static JSEngine mJsEngine = null;

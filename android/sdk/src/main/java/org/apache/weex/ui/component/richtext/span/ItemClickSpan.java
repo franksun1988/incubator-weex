@@ -21,10 +21,12 @@ package org.apache.weex.ui.component.richtext.span;
 
 import android.text.style.ClickableSpan;
 import android.view.View;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.ui.component.richtext.node.RichTextNode;
 import org.apache.weex.utils.WXDataStructureUtil;
+
 import java.util.Map;
 
 public class ItemClickSpan extends ClickableSpan {

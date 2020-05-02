@@ -18,7 +18,7 @@
  */
 package org.apache.weex.appfram.websocket;
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 /**
  * Created by moxun on 16/12/27.

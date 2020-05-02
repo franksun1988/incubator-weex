@@ -22,12 +22,15 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKEngine;
 import org.apache.weex.annotation.JSMethod;
 import org.apache.weex.bridge.JSCallback;
@@ -326,13 +329,13 @@ public class WXNavigatorModule extends WXModule {
         boolean result = false;
         boolean hasAppCompatActivity = false;
         try {
-            Class.forName("android.support.v7.app.AppCompatActivity");
+            Class.forName("androidx.appcompat.app.AppCompatActivity");
             hasAppCompatActivity = true;
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         if (hasAppCompatActivity && mWXSDKInstance.getContext() instanceof AppCompatActivity) {
-            android.support.v7.app.ActionBar actionbar = ((AppCompatActivity) mWXSDKInstance.getContext()).getSupportActionBar();
+            ActionBar actionbar = ((AppCompatActivity) mWXSDKInstance.getContext()).getSupportActionBar();
             if (actionbar != null) {
                 switch (visibility) {
                     case Constants.Value.NAV_BAR_HIDDEN:

@@ -21,6 +21,7 @@ package org.apache.weex.ui.component.richtext.span;
 import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;
+
 import org.apache.weex.utils.ATagUtil;
 
 public class ASpan extends ClickableSpan {

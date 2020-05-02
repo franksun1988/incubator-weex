@@ -21,6 +21,7 @@ package org.apache.weex.ui.action;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.ui.component.richtext.WXRichText;
+
 import java.util.HashMap;
 import java.util.Map;
 

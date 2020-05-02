@@ -26,13 +26,13 @@ import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.WXException;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.cache.RegisterCache;
+import org.apache.weex.utils.cache.RegisterCache.ComponentCache;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.utils.cache.RegisterCache.ComponentCache;
 
 /**
  * All components must be registered within this class before used.

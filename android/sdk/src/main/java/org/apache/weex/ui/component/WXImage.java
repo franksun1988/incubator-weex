@@ -18,18 +18,6 @@
  */
 package org.apache.weex.ui.component;
 
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import org.apache.weex.dom.WXImageQuality;
-
-import java.lang.ref.WeakReference;
-import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
-
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
@@ -38,14 +26,18 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ImageView.ScaleType;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.adapter.IWXImgLoaderAdapter;
@@ -57,6 +49,7 @@ import org.apache.weex.common.Constants;
 import org.apache.weex.common.WXImageSharpen;
 import org.apache.weex.common.WXImageStrategy;
 import org.apache.weex.common.WXRuntimeException;
+import org.apache.weex.dom.WXImageQuality;
 import org.apache.weex.performance.WXAnalyzerDataTransfer;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.ui.ComponentCreator;
@@ -71,6 +64,14 @@ import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewToImageUtil;
 import org.apache.weex.utils.WXViewUtils;
+
+import java.lang.ref.WeakReference;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 /**
  * Image component

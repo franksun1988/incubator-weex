@@ -18,13 +18,12 @@
  */
 package org.apache.weex.http;
 
-import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;
-
 import android.net.Uri;
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSONException;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
@@ -38,6 +37,7 @@ import org.apache.weex.common.WXRequest;
 import org.apache.weex.common.WXResponse;
 import org.apache.weex.performance.WXStateRecord;
 import org.apache.weex.utils.WXLogUtils;
+
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -46,6 +46,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;
 
 public class WXStreamModule extends WXModule {
 

@@ -18,19 +18,14 @@
  */
 package org.apache.weex.dom;
 
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-
-import android.support.annotation.NonNull;
-import android.support.annotation.UiThread;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.annotation.UiThread;
+import androidx.collection.ArrayMap;
+
 import org.apache.weex.common.Constants;
 import org.apache.weex.common.Constants.Name;
 import org.apache.weex.common.WXImageSharpen;
@@ -42,9 +37,16 @@ import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
 
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Set;
+
+import static java.lang.Boolean.parseBoolean;
 import static org.apache.weex.dom.binding.ELUtils.COMPONENT_PROPS;
 import static org.apache.weex.dom.binding.ELUtils.EXCLUDES_BINDING;
-import static java.lang.Boolean.parseBoolean;
 
 /**
  * store value of component attribute

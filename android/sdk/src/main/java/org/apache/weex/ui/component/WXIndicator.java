@@ -19,10 +19,11 @@
 package org.apache.weex.ui.component;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;

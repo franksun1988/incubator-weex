@@ -20,9 +20,11 @@ package org.apache.weex.ui.view;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.Nullable;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;
@@ -33,6 +35,7 @@ import org.apache.weex.ui.view.gesture.WXGesture;
 import org.apache.weex.ui.view.gesture.WXGestureObservable;
 import org.apache.weex.utils.WXExceptionUtils;
 import org.apache.weex.utils.WXLogUtils;
+
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;

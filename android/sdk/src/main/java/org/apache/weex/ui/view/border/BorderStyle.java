@@ -22,7 +22,9 @@ import android.graphics.Color;
 import android.graphics.LinearGradient;
 import android.graphics.PathEffect;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
+
 import org.apache.weex.dom.CSSShorthand;
 
 enum BorderStyle {

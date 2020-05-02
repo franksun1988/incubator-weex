@@ -20,12 +20,13 @@ package org.apache.weex.ui.component.richtext;
 
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.SpannedString;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.layout.measurefunc.TextContentBoxMeasurement;

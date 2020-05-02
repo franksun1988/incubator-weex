@@ -18,7 +18,7 @@
  */
 package org.apache.weex.ui.component.list.template;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.apache.weex.el.parse.ArrayStack;
 

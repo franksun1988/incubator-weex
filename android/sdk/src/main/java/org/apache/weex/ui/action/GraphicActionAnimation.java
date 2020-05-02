@@ -25,9 +25,6 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.view.animation.PathInterpolatorCompat;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.view.View;
@@ -38,7 +35,12 @@ import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.view.animation.PathInterpolatorCompat;
+
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;

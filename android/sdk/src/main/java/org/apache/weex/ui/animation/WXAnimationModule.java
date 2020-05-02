@@ -18,8 +18,9 @@
  */
 package org.apache.weex.ui.animation;
 
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
+
+import androidx.annotation.Nullable;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;

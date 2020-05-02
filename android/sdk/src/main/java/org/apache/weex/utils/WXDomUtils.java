@@ -19,11 +19,12 @@
 
 package org.apache.weex.utils;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+
 import org.apache.weex.dom.CSSConstants;
+import org.apache.weex.dom.CSSShorthand;
 import org.apache.weex.dom.CSSShorthand.EDGE;
 import org.apache.weex.ui.component.WXComponent;
-import org.apache.weex.dom.CSSShorthand;
 
 public class WXDomUtils {
 

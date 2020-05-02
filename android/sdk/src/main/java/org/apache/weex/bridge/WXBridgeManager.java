@@ -18,8 +18,6 @@
  */
 package org.apache.weex.bridge;
 
-import static org.apache.weex.bridge.WXModuleManager.createDomModule;
-
 import android.content.Context;
 import android.net.Uri;
 import android.os.Build;
@@ -27,18 +25,21 @@ import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.Looper;
 import android.os.Message;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import android.support.annotation.UiThread;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.annotation.UiThread;
+import androidx.collection.ArrayMap;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.Script;
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKEngine;
@@ -100,6 +101,7 @@ import org.apache.weex.utils.WXWsonJSONSwitch;
 import org.apache.weex.utils.batch.BactchExecutor;
 import org.apache.weex.utils.batch.Interceptor;
 import org.apache.weex.utils.tools.LogDetail;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -110,10 +112,21 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.Stack;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
+
+import static org.apache.weex.bridge.WXModuleManager.createDomModule;
 
 /**
  * Manager class for communication between JavaScript and Android.

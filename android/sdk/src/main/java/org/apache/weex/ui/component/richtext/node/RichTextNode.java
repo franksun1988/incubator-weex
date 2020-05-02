@@ -18,13 +18,8 @@
  */
 package org.apache.weex.ui.component.richtext.node;
 
-import static org.apache.weex.dom.WXStyle.UNSET;
-
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
@@ -33,9 +28,15 @@ import android.text.TextUtils;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.BackgroundColorSpan;
 import android.text.style.ForegroundColorSpan;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;
@@ -43,10 +44,13 @@ import org.apache.weex.dom.WXCustomStyleSpan;
 import org.apache.weex.dom.WXStyle;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXResourceUtils;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import static org.apache.weex.dom.WXStyle.UNSET;
 
 public abstract class RichTextNode {
 

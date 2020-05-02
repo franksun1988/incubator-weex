@@ -19,10 +19,11 @@
 package org.apache.weex.ui.flat;
 
 
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
 import android.util.Pair;
 import android.view.ViewGroup;
+
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.ui.action.BasicComponentData;

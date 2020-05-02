@@ -21,6 +21,7 @@ package org.apache.weex;
 import android.net.Uri;
 import android.text.TextUtils;
 
+import org.apache.weex.adapter.IWXHttpAdapter.OnHttpListener;
 import org.apache.weex.adapter.IWXUserTrackAdapter;
 import org.apache.weex.common.WXErrorCode;
 import org.apache.weex.common.WXPerformance;
@@ -34,7 +35,6 @@ import org.apache.weex.utils.tools.LogDetail;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.apache.weex.adapter.IWXHttpAdapter.OnHttpListener;
 
 /**
  * load bundle js listener

@@ -60,7 +60,7 @@ ext {
     fastjsonLibVersion="1.1.70.android"
     //Default value for disableCov is false
     disableCov = project.hasProperty("disableCov") && disableCov.equals("true")
-    useApachePackageName = project.hasProperty('apachePackageName') ? project.property('apachePackageName').toBoolean() : false
+    useApachePackageName = project.hasProperty('apachePackageName') ? project.property('apachePackageName').toBoolean() : true
     unbundlingJSC = project.hasProperty('unbundlingJSC') ? project.property('unbundlingJSC').toBoolean() : false
     artifactName = project.hasProperty('artifactName') ? project.property('artifactName') : 'weex_sdk'
     groupId = project.hasProperty('groupId') ? project.property('groupId') : 'com.taobao.android'

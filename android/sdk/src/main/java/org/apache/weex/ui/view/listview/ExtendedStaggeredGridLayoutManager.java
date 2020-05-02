@@ -18,8 +18,9 @@
  */
 package org.apache.weex.ui.view.listview;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.utils.WXLogUtils;
@@ -28,7 +29,7 @@ import org.apache.weex.utils.WXLogUtils;
  * Created by zhengshihan on 2017/5/5.
  */
 
-public class ExtendedStaggeredGridLayoutManager extends StaggeredGridLayoutManager{
+public class ExtendedStaggeredGridLayoutManager extends StaggeredGridLayoutManager {
 
   public ExtendedStaggeredGridLayoutManager(int spanCount, int orientation) {
     super(spanCount, orientation);

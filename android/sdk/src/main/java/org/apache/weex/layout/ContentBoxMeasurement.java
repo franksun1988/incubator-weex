@@ -18,8 +18,9 @@
  */
 package org.apache.weex.layout;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
 import org.apache.weex.base.CalledByNative;
 import org.apache.weex.common.Destroyable;
 import org.apache.weex.ui.component.WXComponent;

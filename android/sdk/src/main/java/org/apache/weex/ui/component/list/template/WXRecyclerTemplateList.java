@@ -24,27 +24,31 @@ import android.graphics.Point;
 import android.graphics.PointF;
 import android.os.Build;
 import android.os.Looper;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;
 import org.apache.weex.annotation.JSMethod;
 import org.apache.weex.bridge.JSCallback;
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.Name;
 import org.apache.weex.common.ICheckBindingScroller;
 import org.apache.weex.common.OnWXScrollListener;
 import org.apache.weex.common.WXErrorCode;
@@ -77,6 +81,7 @@ import org.apache.weex.utils.WXExceptionUtils;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -85,7 +90,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.common.Constants.Name;
 
 /**
  * weex template list supported, high performance recycler-list

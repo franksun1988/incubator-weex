@@ -24,12 +24,13 @@ import android.content.Context;
 import android.content.pm.ApplicationInfo;
 import android.os.Build;
 import android.text.TextUtils;
+
 import org.apache.weex.IWXStatisticsListener;
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.adapter.IWXSoLoaderAdapter;
 import org.apache.weex.adapter.IWXUserTrackAdapter;
 import org.apache.weex.common.WXErrorCode;
-import dalvik.system.PathClassLoader;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -42,6 +43,8 @@ import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
+
+import dalvik.system.PathClassLoader;
 
 
 /**

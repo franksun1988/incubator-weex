@@ -19,8 +19,9 @@
 package org.apache.weex.ui.view.listview.adapter;
 
 import android.graphics.Canvas;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 public class TransformItemDecoration extends RecyclerView.ItemDecoration{
   boolean mIsVertical = true;

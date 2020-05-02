@@ -24,8 +24,6 @@ import android.graphics.Rect;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -35,6 +33,9 @@ import android.widget.FrameLayout;
 import android.widget.MediaController;
 import android.widget.ProgressBar;
 import android.widget.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.apache.weex.ui.view.gesture.WXGesture;
 import org.apache.weex.ui.view.gesture.WXGestureObservable;

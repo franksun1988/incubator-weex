@@ -27,10 +27,11 @@ import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import org.apache.weex.R;
 import org.apache.weex.IWXRenderListener;
+import org.apache.weex.R;
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
+import org.apache.weex.WXSDKInstance.OnInstanceVisibleListener;
 import org.apache.weex.annotation.Component;
 import org.apache.weex.common.Constants;
 import org.apache.weex.common.OnWXScrollListener;
@@ -48,7 +49,6 @@ import java.util.Comparator;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import org.apache.weex.WXSDKInstance.OnInstanceVisibleListener;
 
 @Component(lazyload = false)
 public class WXEmbed extends WXDiv implements OnInstanceVisibleListener,NestedContainer {

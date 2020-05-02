@@ -22,10 +22,11 @@ import android.util.Pair;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
+import org.apache.weex.annotation.Component;
 import org.apache.weex.annotation.JSMethod;
 import org.apache.weex.bridge.Invoker;
 import org.apache.weex.bridge.MethodInvoker;
-import org.apache.weex.annotation.Component;
+import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.WXErrorCode;
 import org.apache.weex.common.WXRuntimeException;
 import org.apache.weex.ui.action.BasicComponentData;
@@ -42,7 +43,6 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import org.apache.weex.bridge.WXBridgeManager;
 
 /**
  * Created by sospartan on 6/12/16.

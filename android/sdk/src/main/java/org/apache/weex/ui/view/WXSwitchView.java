@@ -20,9 +20,10 @@ package org.apache.weex.ui.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.SwitchCompat;
 import android.view.Gravity;
 import android.view.MotionEvent;
+
+import androidx.appcompat.widget.SwitchCompat;
 
 import org.apache.weex.ui.view.gesture.WXGesture;
 import org.apache.weex.ui.view.gesture.WXGestureObservable;

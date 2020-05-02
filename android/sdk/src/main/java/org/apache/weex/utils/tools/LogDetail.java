@@ -22,7 +22,9 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.alibaba.fastjson.annotation.JSONField;
+
 import org.apache.weex.WXEnvironment;
+
 import java.util.Locale;
 
 public class LogDetail {

@@ -20,6 +20,7 @@ package org.apache.weex.bridge;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.ui.component.WXComponent;
 

@@ -18,8 +18,9 @@
  */
 package org.apache.weex.ui.component.helper;
 
-import android.support.annotation.Nullable;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import org.apache.weex.appfram.pickers.DatePickerImpl;
 import org.apache.weex.ui.component.AbstractEditComponent;

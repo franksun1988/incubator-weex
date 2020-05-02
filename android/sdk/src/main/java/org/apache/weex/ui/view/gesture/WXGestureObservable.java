@@ -18,9 +18,10 @@
  */
 package org.apache.weex.ui.view.gesture;
 
-import android.support.annotation.Nullable;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 import org.apache.weex.ui.view.WXFrameLayout;
 

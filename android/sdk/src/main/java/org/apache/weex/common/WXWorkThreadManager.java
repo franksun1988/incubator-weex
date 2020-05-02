@@ -18,8 +18,9 @@
  */
 package org.apache.weex.common;
 
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

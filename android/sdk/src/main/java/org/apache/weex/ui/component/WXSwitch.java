@@ -19,9 +19,10 @@
 package org.apache.weex.ui.component;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.CompoundButton;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.annotation.Component;

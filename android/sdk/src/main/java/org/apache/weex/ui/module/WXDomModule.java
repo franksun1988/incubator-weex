@@ -18,10 +18,12 @@
  */
 package org.apache.weex.ui.module;
 
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.WXModule;

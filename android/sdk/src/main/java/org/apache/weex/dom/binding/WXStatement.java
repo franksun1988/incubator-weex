@@ -18,8 +18,8 @@
  */
 package org.apache.weex.dom.binding;
 
-import android.support.v4.util.ArrayMap;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.ArrayMap;
+import androidx.collection.SimpleArrayMap;
 
 /**
  * Created by furture on 2017/8/17.

@@ -19,11 +19,12 @@
 package org.apache.weex.utils;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.common.WXRuntimeException;
 

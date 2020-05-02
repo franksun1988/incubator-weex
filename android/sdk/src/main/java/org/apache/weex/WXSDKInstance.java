@@ -18,8 +18,6 @@
  */
 package org.apache.weex;
 
-import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,20 +26,22 @@ import android.content.IntentFilter;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
-import android.support.annotation.WorkerThread;
-import android.support.v4.util.ArrayMap;
-import android.util.Pair;
 import android.text.TextUtils;
+import android.util.Pair;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ScrollView;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+import androidx.annotation.WorkerThread;
+import androidx.collection.ArrayMap;
+
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.adapter.IDrawableLoader;
 import org.apache.weex.adapter.IWXConfigAdapter;
 import org.apache.weex.adapter.IWXHttpAdapter;
@@ -71,8 +71,6 @@ import org.apache.weex.common.WXRequest;
 import org.apache.weex.dom.WXEvent;
 import org.apache.weex.http.WXHttpUtil;
 import org.apache.weex.instance.InstanceOnFireEventInterceptor;
-import org.apache.weex.jsEngine.JSContext;
-import org.apache.weex.jsEngine.JSEngine;
 import org.apache.weex.layout.ContentBoxMeasurement;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.performance.WXStateRecord;
@@ -97,6 +95,7 @@ import org.apache.weex.utils.WXViewUtils;
 import org.apache.weex.utils.cache.RegisterCache;
 import org.apache.weex.utils.tools.LogDetail;
 import org.apache.weex.utils.tools.TimeCalculator;
+
 import java.io.Serializable;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
@@ -106,7 +105,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.bridge.WXBridgeManager.BundType;
 
 import static org.apache.weex.common.WXErrorCode.WX_ERR_RELOAD_PAGE;
 import static org.apache.weex.http.WXHttpUtil.KEY_USER_AGENT;

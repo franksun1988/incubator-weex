@@ -22,6 +22,8 @@ import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64;
 
+import org.apache.weex.WXEnvironment;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.Closeable;
@@ -40,7 +42,6 @@ import java.util.Locale;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
-import org.apache.weex.WXEnvironment;
 
 import static org.apache.weex.utils.WXSoInstallMgrSdk._cpuType;
 

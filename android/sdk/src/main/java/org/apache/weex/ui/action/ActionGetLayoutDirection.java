@@ -18,9 +18,10 @@
  */
 package org.apache.weex.ui.action;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.View;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;

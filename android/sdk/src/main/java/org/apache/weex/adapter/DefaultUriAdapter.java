@@ -19,8 +19,9 @@
 package org.apache.weex.adapter;
 
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import org.apache.weex.WXSDKInstance;
 

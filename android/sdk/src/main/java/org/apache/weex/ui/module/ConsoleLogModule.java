@@ -18,9 +18,10 @@
  */
 package org.apache.weex.ui.module;
 
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.text.TextUtils;
+
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.annotation.JSMethod;
@@ -28,6 +29,7 @@ import org.apache.weex.bridge.JSCallback;
 import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.WXModule;
 import org.apache.weex.utils.LogLevel;
+
 import java.util.Map;
 
 

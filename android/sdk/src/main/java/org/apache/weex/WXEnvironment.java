@@ -18,8 +18,6 @@
  */
 package org.apache.weex;
 
-import static android.content.Context.MODE_PRIVATE;
-
 import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
@@ -29,11 +27,22 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Environment;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import dalvik.system.PathClassLoader;
+
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
+
+import org.apache.weex.common.WXConfig;
+import org.apache.weex.utils.FontDO;
+import org.apache.weex.utils.LogLevel;
+import org.apache.weex.utils.TypefaceUtil;
+import org.apache.weex.utils.WXFileUtils;
+import org.apache.weex.utils.WXLogUtils;
+import org.apache.weex.utils.WXSoInstallMgrSdk;
+import org.apache.weex.utils.WXUtils;
+import org.apache.weex.utils.WXViewUtils;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -44,16 +53,10 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.R;
-import org.apache.weex.common.WXConfig;
-import org.apache.weex.utils.FontDO;
-import org.apache.weex.utils.LogLevel;
-import org.apache.weex.utils.TypefaceUtil;
-import org.apache.weex.utils.WXFileUtils;
-import org.apache.weex.utils.WXLogUtils;
-import org.apache.weex.utils.WXSoInstallMgrSdk;
-import org.apache.weex.utils.WXUtils;
-import org.apache.weex.utils.WXViewUtils;
+
+import dalvik.system.PathClassLoader;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class WXEnvironment {
 

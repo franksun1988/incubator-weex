@@ -27,10 +27,10 @@ fi
 
 echo "Build Weex SDK from source...."
 
-npm install
-npm run build:jsfm
-npm run build:polyfill
-npm run build:rax
+cnpm install
+cnpm run build:jsfm
+cnpm run build:polyfill
+cnpm run build:rax
 
 echo "Weex JS Framework build completed."
 sleep 2

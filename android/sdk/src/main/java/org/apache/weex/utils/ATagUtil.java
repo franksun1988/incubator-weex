@@ -23,6 +23,7 @@ import android.net.Uri;
 import android.view.View;
 
 import com.alibaba.fastjson.JSONArray;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.adapter.URIAdapter;

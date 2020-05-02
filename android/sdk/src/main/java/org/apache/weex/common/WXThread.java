@@ -22,13 +22,14 @@ import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.HandlerThread;
 import android.os.Message;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.tools.LogDetail;
+import org.apache.weex.utils.tools.TimeCalculator;
 
 import java.lang.ref.WeakReference;
-import org.apache.weex.utils.tools.TimeCalculator;
 
 /**
  * Thread used in weex

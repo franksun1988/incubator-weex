@@ -36,15 +36,6 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.RippleDrawable;
 import android.os.Build;
-import android.support.annotation.CallSuper;
-import android.support.annotation.CheckResult;
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RestrictTo;
-import android.support.v4.view.AccessibilityDelegateCompat;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.text.TextUtils;
 import android.util.Pair;
 import android.view.Gravity;
@@ -53,7 +44,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewOverlay;
 import android.widget.FrameLayout;
+
+import androidx.annotation.CallSuper;
+import androidx.annotation.CheckResult;
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+import androidx.core.view.AccessibilityDelegateCompat;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+
 import com.alibaba.fastjson.JSONArray;
+
 import org.apache.weex.ComponentObserver;
 import org.apache.weex.IWXActivityStateListener;
 import org.apache.weex.WXEnvironment;
@@ -65,6 +68,7 @@ import org.apache.weex.bridge.EventResult;
 import org.apache.weex.bridge.Invoker;
 import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.Event;
 import org.apache.weex.common.IWXObject;
 import org.apache.weex.common.WXErrorCode;
 import org.apache.weex.common.WXPerformance;
@@ -79,6 +83,7 @@ import org.apache.weex.performance.WXAnalyzerDataTransfer;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.tracing.Stopwatch;
 import org.apache.weex.tracing.WXTracing;
+import org.apache.weex.tracing.WXTracing.TraceInfo;
 import org.apache.weex.ui.IFComponentHolder;
 import org.apache.weex.ui.WXRenderManager;
 import org.apache.weex.ui.action.BasicComponentData;
@@ -87,6 +92,7 @@ import org.apache.weex.ui.action.GraphicActionUpdateStyle;
 import org.apache.weex.ui.action.GraphicPosition;
 import org.apache.weex.ui.action.GraphicSize;
 import org.apache.weex.ui.animation.WXAnimationBean;
+import org.apache.weex.ui.animation.WXAnimationModule.AnimationHolder;
 import org.apache.weex.ui.component.basic.WXBasicComponent;
 import org.apache.weex.ui.component.binding.Statements;
 import org.apache.weex.ui.component.list.WXCell;
@@ -111,6 +117,7 @@ import org.apache.weex.utils.WXReflectionUtils;
 import org.apache.weex.utils.WXResourceUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -127,9 +134,6 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
-import org.apache.weex.common.Constants.Event;
-import org.apache.weex.tracing.WXTracing.TraceInfo;
-import org.apache.weex.ui.animation.WXAnimationModule.AnimationHolder;
 
 /**
  * abstract component

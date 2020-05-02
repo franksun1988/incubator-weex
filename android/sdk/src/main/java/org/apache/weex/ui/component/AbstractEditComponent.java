@@ -21,7 +21,6 @@ package org.apache.weex.ui.component;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.annotation.NonNull;
 import android.text.Editable;
 import android.text.InputFilter;
 import android.text.InputType;
@@ -39,7 +38,10 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.annotation.JSMethod;

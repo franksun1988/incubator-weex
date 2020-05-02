@@ -19,16 +19,17 @@
 package org.apache.weex.bridge;
 
 import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.Menu;
+
+import androidx.annotation.NonNull;
 
 import com.alibaba.fastjson.JSONArray;
 
 import org.apache.weex.WXEaglePluginManager;
+import org.apache.weex.WXSDKEngine;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
-import org.apache.weex.WXSDKEngine;
 import org.apache.weex.adapter.IWXUserTrackAdapter;
 import org.apache.weex.common.Destroyable;
 import org.apache.weex.common.WXException;
@@ -46,7 +47,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import org.apache.weex.utils.cache.RegisterCache.ModuleCache;
 
 /**
  * Manager class for weex module. There are two types of modules in weex, one is instance-level module,

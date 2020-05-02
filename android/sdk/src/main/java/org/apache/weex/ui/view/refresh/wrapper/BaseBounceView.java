@@ -20,11 +20,12 @@ package org.apache.weex.ui.view.refresh.wrapper;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.v7.widget.OrientationHelper;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.recyclerview.widget.OrientationHelper;
 
 import org.apache.weex.common.Constants;
 import org.apache.weex.ui.component.WXComponent;

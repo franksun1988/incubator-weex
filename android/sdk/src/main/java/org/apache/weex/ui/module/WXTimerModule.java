@@ -21,11 +21,12 @@ package org.apache.weex.ui.module;
 import android.annotation.SuppressLint;
 import android.os.Handler;
 import android.os.Message;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntDef;
-import android.support.annotation.IntRange;
-import android.support.annotation.VisibleForTesting;
 import android.util.SparseArray;
+
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntDef;
+import androidx.annotation.IntRange;
+import androidx.annotation.VisibleForTesting;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
@@ -35,16 +36,17 @@ import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.bridge.WXHashMap;
 import org.apache.weex.bridge.WXJSObject;
 import org.apache.weex.common.Destroyable;
+import org.apache.weex.common.WXJSBridgeMsgType;
 import org.apache.weex.common.WXModule;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.utils.WXJsonUtils;
 import org.apache.weex.utils.WXLogUtils;
+import org.apache.weex.utils.WXUtils;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.HashMap;
-import org.apache.weex.utils.WXUtils;
-import org.apache.weex.common.WXJSBridgeMsgType;
 
 public class WXTimerModule extends WXModule implements Destroyable, Handler.Callback {
 

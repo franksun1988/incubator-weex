@@ -18,13 +18,13 @@
  */
 package org.apache.weex.ui.component.richtext.node;
 
-import static org.apache.weex.utils.WXViewUtils.getRealPxByWidth;
-
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.support.annotation.NonNull;
 import android.text.SpannableStringBuilder;
+
+import androidx.annotation.NonNull;
+
 import org.apache.weex.WXSDKEngine;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
@@ -39,6 +39,8 @@ import org.apache.weex.utils.WXUtils;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
+import static org.apache.weex.utils.WXViewUtils.getRealPxByWidth;
 
 class ImgNode extends RichTextNode {
 

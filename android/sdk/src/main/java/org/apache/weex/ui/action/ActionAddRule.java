@@ -17,9 +17,11 @@
  * under the License.
  */
 package org.apache.weex.ui.action;
+
 import android.text.TextUtils;
 
 import com.alibaba.fastjson.JSONObject;
+
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.common.Constants;

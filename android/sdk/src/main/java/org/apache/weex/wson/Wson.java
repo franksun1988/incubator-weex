@@ -19,12 +19,13 @@
 package org.apache.weex.wson;
 
 
-import android.support.v4.util.LruCache;
+import androidx.collection.LruCache;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.annotation.JSONField;
+
 import org.apache.weex.utils.WXLogUtils;
 
 import java.lang.reflect.Array;

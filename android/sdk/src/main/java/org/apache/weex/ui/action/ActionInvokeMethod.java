@@ -19,6 +19,7 @@
 package org.apache.weex.ui.action;
 
 import com.alibaba.fastjson.JSONArray;
+
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.utils.WXLogUtils;

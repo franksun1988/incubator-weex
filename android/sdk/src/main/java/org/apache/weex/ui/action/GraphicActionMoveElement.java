@@ -18,9 +18,9 @@
  */
 package org.apache.weex.ui.action;
 
-import org.apache.weex.WXSDKInstance;
 import android.text.TextUtils;
 
+import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.ui.component.WXVContainer;

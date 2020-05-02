@@ -24,17 +24,22 @@ import android.graphics.Point;
 import android.graphics.PointF;
 import android.graphics.Rect;
 import android.os.Looper;
-import android.support.annotation.NonNull;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
+import androidx.annotation.NonNull;
+
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+
+import org.apache.weex.WXSDKInstance;
 import org.apache.weex.bridge.EventResult;
 import org.apache.weex.common.Constants;
+import org.apache.weex.common.Constants.Event;
 import org.apache.weex.dom.WXEvent;
 import org.apache.weex.ui.component.Scrollable;
 import org.apache.weex.ui.component.WXComponent;
@@ -44,13 +49,12 @@ import org.apache.weex.ui.view.gesture.WXGestureType.LowLevelGesture;
 import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import org.apache.weex.WXSDKInstance;
-import org.apache.weex.common.Constants.Event;
 
 public class WXGesture extends GestureDetector.SimpleOnGestureListener implements OnTouchListener {
 

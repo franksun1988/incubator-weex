@@ -18,11 +18,12 @@
  */
 package org.apache.weex.common;
 
-import android.support.annotation.RestrictTo;
+import androidx.annotation.RestrictTo;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
 import org.apache.weex.WXSDKManager;
+import org.apache.weex.bridge.WXBridgeManager;
 import org.apache.weex.performance.WXInstanceApm;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
@@ -31,7 +32,6 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import org.apache.weex.bridge.WXBridgeManager;
 
 @Deprecated
 public class WXPerformance {

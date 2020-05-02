@@ -19,6 +19,7 @@
 package org.apache.weex;
 
 import android.view.View;
+
 import org.apache.weex.common.WXRenderStrategy;
 
 public interface IWXRenderListener {

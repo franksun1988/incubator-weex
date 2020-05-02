@@ -18,8 +18,9 @@
  */
 package org.apache.weex.ui.component.list.template;
 
-import android.support.v4.view.ViewCompat;
 import android.view.View;
+
+import androidx.core.view.ViewCompat;
 
 import org.apache.weex.WXSDKManager;
 import org.apache.weex.dom.WXAttr;

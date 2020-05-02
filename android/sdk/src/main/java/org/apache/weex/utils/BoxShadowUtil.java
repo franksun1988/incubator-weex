@@ -39,15 +39,18 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
 import android.os.Build.VERSION_CODES;
-import android.support.annotation.IntRange;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
+import androidx.annotation.IntRange;
+import androidx.annotation.Nullable;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.common.WXThread;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

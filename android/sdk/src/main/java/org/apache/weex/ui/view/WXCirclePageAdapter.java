@@ -18,9 +18,10 @@
  */
 package org.apache.weex.ui.view;
 
-import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.viewpager.widget.PagerAdapter;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.utils.WXLogUtils;

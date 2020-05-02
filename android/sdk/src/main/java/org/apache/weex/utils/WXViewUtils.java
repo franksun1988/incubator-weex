@@ -34,14 +34,15 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
 import android.os.Build.VERSION_CODES;
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.WXSDKInstance;
@@ -53,6 +54,7 @@ import org.apache.weex.ui.component.WXComponent;
 import org.apache.weex.ui.flat.widget.Widget;
 import org.apache.weex.ui.flat.widget.WidgetGroup;
 import org.apache.weex.ui.view.border.BorderDrawable;
+
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.concurrent.atomic.AtomicInteger;

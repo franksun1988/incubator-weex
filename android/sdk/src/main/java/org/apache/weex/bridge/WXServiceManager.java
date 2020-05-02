@@ -19,6 +19,7 @@
 package org.apache.weex.bridge;
 
 import android.text.TextUtils;
+
 import org.apache.weex.WXEnvironment;
 import org.apache.weex.common.WXJSService;
 

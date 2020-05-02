@@ -20,10 +20,11 @@ package org.apache.weex.ui.flat.widget;
 
 
 import android.graphics.Canvas;
-import android.support.annotation.NonNull;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
 import android.text.Layout;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RestrictTo;
+import androidx.annotation.RestrictTo.Scope;
 
 import org.apache.weex.ui.flat.FlatGUIContext;
 
