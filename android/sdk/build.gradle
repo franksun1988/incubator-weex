@@ -16,22 +16,22 @@
  * specific language governing permissions and limitations
  * under the License.
  */
- plugins {
-     id "com.github.hierynomus.license" version "0.14.0"
-     id 'com.jfrog.artifactory' version '4.10.0'
- }
+plugins {
+    id "com.github.hierynomus.license" version "0.14.0"
+    id 'com.jfrog.artifactory' version '4.10.0'
+}
 
 apply plugin: 'com.android.library'
 apply plugin: 'checkstyle'
 apply plugin: 'com.jfrog.bintray'
 apply plugin: 'com.github.dcendents.android-maven'
 
-apply from: 'buildSrc/jcenter.gradle'
-apply from: 'buildSrc/unstripped.gradle'
+//apply from: 'buildSrc/jcenter.gradle'
+//apply from: 'buildSrc/unstripped.gradle'
 apply from: 'buildSrc/checkStyle.gradle'
 apply from: 'buildSrc/download_jsc.gradle'
 apply from: 'buildSrc/packageName.gradle'
-apply from: 'buildSrc/asan.gradle'
+//apply from: 'buildSrc/asan.gradle'
 
 version = project.weexVersion
 group = project.groupId
@@ -40,17 +40,17 @@ group = project.groupId
 if (!project.hasProperty('ignoreVersionCheck') || !project.getProperty('ignoreVersionCheck').equals("true")) {
     version.tokenize('.').eachWithIndex { it, i ->
         if (i < 3) {
-            assert it.isNumber() : "Please use semantic versioning witch 4 sections, you are using ${${i} + 1} section instead."
+            assert it.isNumber(): "Please use semantic versioning witch 4 sections, you are using ${$ { i } + 1} section instead."
         } else if (i == 3) {
             it.split("[-_]").toList().eachWithIndex { inner_it, inner_i ->
                 if (inner_i == 0) {
-                    assert inner_it.isNumber() && inner_it.toInteger() % 2 : "The 4th dight in the versioning number must be a odd number, and it is ${inner_it} currently."
+                    assert inner_it.isNumber() && inner_it.toInteger() % 2: "The 4th dight in the versioning number must be a odd number, and it is ${inner_it} currently."
                 } else {
-                    assert !inner_it.isNumber() : "The suffix of the versioning number is not allowed to contain any number, and it is ${inner_it} currently."
+                    assert !inner_it.isNumber(): "The suffix of the versioning number is not allowed to contain any number, and it is ${inner_it} currently."
                 }
             }.size == 4
         } else {
-            assert false: "Please use semantic versioning witch 4 sections, you are using ${${i} + 1} section instead."
+            assert false: "Please use semantic versioning witch 4 sections, you are using ${$ { i } + 1} section instead."
         }
     }
 }
@@ -59,7 +59,7 @@ android {
     compileSdkVersion project.compileSdkVersion
     resourcePrefix "weex"
     useLibrary 'org.apache.http.legacy'
-    if(project.hasProperty('removeSharedLib') && "true".equals(project.getProperty('removeSharedLib'))) {
+    if (project.hasProperty('removeSharedLib') && "true".equals(project.getProperty('removeSharedLib'))) {
         packagingOptions {
             exclude 'lib/armeabi-v7a/libc++_shared.so'
             exclude 'lib/arm64-v8a/libc++_shared.so'
@@ -69,26 +69,26 @@ android {
     }
     copy {
         from '../../pre-build'
-        into new File(projectDir,"assets")
+        into new File(projectDir, "assets")
         include 'native-bundle-main.js'
-        rename('native-bundle-main.js','main.js')
+        rename('native-bundle-main.js', 'main.js')
     }
     def line
-    new File(projectDir,"assets/main.js").withReader { line = it.readLine() }
+    new File(projectDir, "assets/main.js").withReader { line = it.readLine() }
     def m = line =~ /[A-Z\s]+\s+([0-9\.]+),\s+Build\s+[0-9]+/;
     def jsfmVersion // = m[0][1]
     println jsfmVersion
 
     copy {
         from '../../pre-build'
-        into new File(projectDir,"assets")
+        into new File(projectDir, "assets")
         include 'weex-main-jsfm.js'
-        rename('weex-main-jsfm.js','weex-main-jsfm.js')
+        rename('weex-main-jsfm.js', 'weex-main-jsfm.js')
     }
 
     copy {
         from '../../pre-build'
-        into new File(projectDir,"assets")
+        into new File(projectDir, "assets")
         include 'weex-rax-api.js'
     }
 
@@ -107,8 +107,8 @@ android {
     def buildRuntimeApi = project.hasProperty('buildRuntimeApi') ? project.property('buildRuntimeApi').toBoolean() : true
     def jsInterpolatorName = project.hasProperty('JSInterpolatorName') ? project.property('JSInterpolatorName') : 'jsc'
     def initJSCPrivateApi = false
-    if (buildRuntimeApi){
-        initJSCPrivateApi = jsInterpolatorName =="JavaScriptCore"
+    if (buildRuntimeApi) {
+        initJSCPrivateApi = jsInterpolatorName == "JavaScriptCore"
     }
 
     defaultConfig {
@@ -123,18 +123,18 @@ android {
         versionCode 1
         versionName project.version
         ndk {
-            if(!project.hasProperty('supportArmeabi-v7a') || "false" != project.getProperty('supportArmeabi-v7a')){
+            if (!project.hasProperty('supportArmeabi-v7a') || "false" != project.getProperty('supportArmeabi-v7a')) {
                 abiFilters 'armeabi-v7a'
             }
 
-            if(!project.hasProperty('supportArm64-v8a') || "false" != project.getProperty('supportArm64-v8a')){
+            if (!project.hasProperty('supportArm64-v8a') || "false" != project.getProperty('supportArm64-v8a')) {
                 abiFilters 'arm64-v8a'
             }
 
-            if(!project.hasProperty('supportX86') || "false" != project.getProperty('supportX86')){
+            if (!project.hasProperty('supportX86') || "false" != project.getProperty('supportX86')) {
                 abiFilters 'x86'
             }
-            if(!project.hasProperty('supportX86_64') || "false" != project.getProperty('supportX86_64')){
+            if (!project.hasProperty('supportX86_64') || "false" != project.getProperty('supportX86_64')) {
                 abiFilters 'x86_64'
             }
         }
@@ -146,13 +146,13 @@ android {
                         '-DCMAKE_BUILD_TYPE=Release',
                         '-DANDROID_PROJECT_DIR=' + "${android_project_dir}",
                         '-DENABLE_ASAN=false'
-                if(buildRuntimeApi){
-                    arguments '-DBUILD_RUNTIME_API='+"${buildRuntimeApi}"
-                    if (initJSCPrivateApi){
-                        arguments '-DINIT_JSC_PRIVATE_API='+"${initJSCPrivateApi}"
+                if (buildRuntimeApi) {
+                    arguments '-DBUILD_RUNTIME_API=' + "${buildRuntimeApi}"
+                    if (initJSCPrivateApi) {
+                        arguments '-DINIT_JSC_PRIVATE_API=' + "${initJSCPrivateApi}"
                     }
                 }
-                if(project.hasProperty('enableASan') && "true" == project.getProperty('enableASan')) {
+                if (project.hasProperty('enableASan') && "true" == project.getProperty('enableASan')) {
                     cppFlags "-fsanitize=address -fno-omit-frame-pointer"
                 }
             }
@@ -174,26 +174,25 @@ android {
             consumerProguardFiles 'proguard-rules.pro'
         }
 
-        apacheRelease{
+        apacheRelease {
             initWith release
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             consumerProguardFiles 'proguard-rules.pro'
         }
 
-        legacyRelease{
+        legacyRelease {
             initWith release
-            proguardFiles getDefaultProguardFile('proguard-android.txt'),  'proguard-rules-legacy.pro'
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules-legacy.pro'
             consumerProguardFiles 'proguard-rules-legacy.pro'
         }
     }
 
     externalNativeBuild {
         cmake {
-            if(project.useApachePackageName) {
+            if (project.useApachePackageName) {
                 path '../../weex_core/CMakeLists.txt'
-            }
-            else{
-                copy{
+            } else {
+                copy {
                     from new File('../../weex_core/CMakeLists.txt')
                     into new File('src/legacyRelease/cpp')
                 }
@@ -208,12 +207,12 @@ android {
         apacheRelease.manifest.srcFile(new File('src/main/AndroidManifest.xml'))
         legacyRelease.java.srcDirs = ['src/legacyRelease/java']
         legacyRelease.manifest.srcFile(new File('src/legacyRelease/AndroidManifest.xml'))
-        if(!project.useApachePackageName){
+        if (!project.useApachePackageName) {
             main.java.srcDirs = ['src/legacyRelease/java']
             main.manifest.srcFile(new File('src/legacyRelease/AndroidManifest.xml'))
         }
 
-        if(project.unbundlingJSC){
+        if (project.unbundlingJSC) {
             main.jniLibs.srcDirs = []
         }
     }
@@ -229,7 +228,7 @@ android {
     testOptions {
         unitTests.all {
             maxHeapSize = "1024m"
-            jvmArgs += ['-XX:-UseSplitVerifier', '-noverify','-Xverify:none']/* fix VerifyError  */
+            jvmArgs += ['-XX:-UseSplitVerifier', '-noverify', '-Xverify:none']/* fix VerifyError  */
         }
     }
 }
