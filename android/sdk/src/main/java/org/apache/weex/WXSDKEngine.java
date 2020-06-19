@@ -296,8 +296,7 @@ public class WXSDKEngine implements Serializable {
                       new WXImage.Creator()
               ),
               false,
-              WXBasicComponentType.IMAGE,
-              WXBasicComponentType.IMG
+              WXBasicComponentType.IMAGE
       );
       registerComponent(
               new SimpleComponentHolder(
