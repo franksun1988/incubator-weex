@@ -22,7 +22,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.6.3'
     }
 }
 
@@ -57,7 +57,7 @@ ext {
     minSdkVersion=14
     targetSdkVersion=28
     supportLibVersion="28.0.0"
-    fastjsonLibVersion="1.1.70.android"
+    fastjsonLibVersion="1.1.71.android"
     //Default value for disableCov is false
     disableCov = project.hasProperty("disableCov") && disableCov.equals("true")
     useApachePackageName = project.hasProperty('apachePackageName') ? project.property('apachePackageName').toBoolean() : true
