@@ -359,7 +359,7 @@ public class WXImage extends WXComponent<ImageView> {
     updateBorderRadius();
   }
 
-  private void updateBorderRadius() {
+  protected void updateBorderRadius() {
     if (getHostView() instanceof WXImageView) {
       final WXImageView imageView = (WXImageView)getHostView();
       BorderDrawable borderDrawable = WXViewUtils.getBorderDrawable(getHostView());
