@@ -85,7 +85,7 @@
     "rollup-watch": "^4.3.1",
     "semver": "^5.1.0",
     "weex-rax-framework": "0.4.20",
-    "weex-vue-framework": "2.5.16-weex.5"
+    "weex-vue-framework": "2.5.22-weex.6"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -128,15 +128,15 @@
     "sinon-chai": "^2.8.0",
     "uglify-es": "^3.3.9",
     "uglify-js": "^2.8.29",
-    "vue": "2.4.3",
-    "vue-loader": "^12.2.1",
-    "vue-template-compiler": "2.4.3",
+    "vue": "2.5.22",
+    "vue-loader": "^14.2.4",
+    "vue-template-compiler": "2.5.22",
     "webpack": "^1.15.0",
     "weex-components": "^0.2.0",
     "weex-gcanvas": "^0.4.2",
-    "weex-loader": "^0.5.3",
+    "weex-loader": "^0.7.12",
     "weex-vdom-tester": "^0.2.0",
-    "weex-vue-render": "^1.0.24",
+    "weex-vue-render": "^1.0.36",
     "weex-wd": "^1.0.23",
     "xmldom": "^0.1.27"
   }

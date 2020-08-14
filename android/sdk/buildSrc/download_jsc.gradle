@@ -90,5 +90,5 @@ task copyJSCHeaderToWeexCore(type: Copy, dependsOn: unzipJSC) {
     inputs.dir(new File(jsc_dir, 'include'))
 }
 
-preBuild.dependsOn copyJscToJniDir
+//preBuild.dependsOn copyJscToJniDir
 clean.dependsOn cleanCopyJscToJniDir

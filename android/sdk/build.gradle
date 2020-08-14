@@ -76,7 +76,7 @@ android {
     def line
     new File(projectDir, "assets/main.js").withReader { line = it.readLine() }
     def m = line =~ /[A-Z\s]+\s+([0-9\.]+),\s+Build\s+[0-9]+/;
-    def jsfmVersion // = m[0][1]
+    def jsfmVersion = m[0][1]
     println jsfmVersion
 
     copy {
@@ -160,6 +160,16 @@ android {
     }
     buildTypes {
         release {
+            ndk {
+                setAbiFilters(["armeabi-v7a", "arm64-v8a", "x86_64"])
+            }
+
+            externalNativeBuild {
+                cmake {
+                    abiFilters "armeabi-v7a", "arm64-v8a", "x86_64"
+                }
+            }
+
             minifyEnabled false
             buildConfigField "boolean", "ENABLE_TRACE", "false"
             proguardFiles getDefaultProguardFile('proguard-android.txt'), useApachePackageName ? 'proguard-rules.pro' : 'proguard-rules-legacy.pro'

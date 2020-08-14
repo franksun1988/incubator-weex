@@ -60,7 +60,7 @@ task copyProguard(type: Copy){
     }
 }
 
-task(cleanCopyProguard, overwrite: true, type: Delete){
+task cleanCopyProguard(type: Delete){
     delete 'proguard-rules-legacy.pro'
 }
 
