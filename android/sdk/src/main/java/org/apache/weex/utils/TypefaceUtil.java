@@ -75,6 +75,10 @@ public class TypefaceUtil {
     sCacheMap.remove(fontFamilyName);
   }
 
+  public static void clearFontDO() {
+    sCacheMap.clear();
+  }
+
   public static void applyFontStyle(Paint paint, int style, int weight, String family) {
     int oldStyle;
     Typeface typeface = paint.getTypeface();
