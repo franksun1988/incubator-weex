@@ -1564,21 +1564,6 @@ public class WXBridgeManager implements Callback, BactchExecutor {
       return;
     }
 
-    if (!isSkipFrameworkInit(instanceId) && !isJSFrameworkInit() && reInitCount == 1 && !WXEnvironment.sDebugServerConnectable) {
-      instance.onRenderError(
-              WXErrorCode.WX_DEGRAD_ERR_INSTANCE_CREATE_FAILED.getErrorCode(),
-              WXErrorCode.WX_DEGRAD_ERR_INSTANCE_CREATE_FAILED.getErrorMsg() +
-                      " isJSFrameworkInit==" + isJSFrameworkInit() + " reInitCount == 1" );
-      instance.getApmForInstance().onStage("createInstance failed jsfm isn't init return;");
-      post(new Runnable() {
-        @Override
-        public void run() {
-          initFramework("");
-        }
-      }, instanceId, instance,"initFrameworkInCreateInstance");
-      return;
-    }
-
     WXModuleManager.createDomModule(instance);
     instance.getApmForInstance().onStage(WXInstanceApm.KEY_PAGE_STAGES_LOAD_BUNDLE_START);
     post(new Runnable() {
