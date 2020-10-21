@@ -18,8 +18,6 @@
  */
 package org.apache.weex;
 
-import static android.content.Context.MODE_PRIVATE;
-
 import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
@@ -30,12 +28,22 @@ import android.content.pm.PackageManager;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Environment;
-import android.support.annotation.RestrictTo;
-import android.support.annotation.RestrictTo.Scope;
+import android.system.Os;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.system.Os;
-import dalvik.system.PathClassLoader;
+
+import androidx.annotation.RestrictTo;
+
+import org.apache.weex.common.WXConfig;
+import org.apache.weex.utils.FontDO;
+import org.apache.weex.utils.LogLevel;
+import org.apache.weex.utils.TypefaceUtil;
+import org.apache.weex.utils.WXFileUtils;
+import org.apache.weex.utils.WXLogUtils;
+import org.apache.weex.utils.WXSoInstallMgrSdk;
+import org.apache.weex.utils.WXUtils;
+import org.apache.weex.utils.WXViewUtils;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileDescriptor;
@@ -48,15 +56,10 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import org.apache.weex.common.WXConfig;
-import org.apache.weex.utils.FontDO;
-import org.apache.weex.utils.LogLevel;
-import org.apache.weex.utils.TypefaceUtil;
-import org.apache.weex.utils.WXFileUtils;
-import org.apache.weex.utils.WXLogUtils;
-import org.apache.weex.utils.WXSoInstallMgrSdk;
-import org.apache.weex.utils.WXUtils;
-import org.apache.weex.utils.WXViewUtils;
+
+import dalvik.system.PathClassLoader;
+
+import static android.content.Context.MODE_PRIVATE;
 
 public class WXEnvironment {
 
@@ -98,7 +101,7 @@ public class WXEnvironment {
 
   public static boolean AUTO_UPDATE_APPLICATION_SCREEN_SIZE = true;
 
-  @RestrictTo(Scope.LIBRARY)
+  @RestrictTo(RestrictTo.Scope.LIBRARY)
   public static volatile boolean sUseRunTimeApi;
 
   /**
@@ -144,7 +147,7 @@ public class WXEnvironment {
   public static final String CORE_JSB_SO_NAME = "weexjsb";
   public static final String CORE_JST_SO_NAME = "weexjst";
 
-  @RestrictTo(Scope.LIBRARY)
+  @RestrictTo(RestrictTo.Scope.LIBRARY)
   public static String CORE_JSC_SO_NAME = BuildConfig.JSInterpolatorName;
   public static  String CORE_JSS_SO_PATH = null;
 
