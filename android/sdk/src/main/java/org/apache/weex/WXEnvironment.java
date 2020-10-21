@@ -18,6 +18,8 @@
  */
 package org.apache.weex;
 
+import static android.content.Context.MODE_PRIVATE;
+
 import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
@@ -26,13 +28,26 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.os.Environment;
+import android.support.annotation.RestrictTo;
+import android.support.annotation.RestrictTo.Scope;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-
-import androidx.annotation.RestrictTo;
-import androidx.annotation.RestrictTo.Scope;
-
+import android.system.Os;
+import dalvik.system.PathClassLoader;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileDescriptor;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import org.apache.weex.common.WXConfig;
 import org.apache.weex.utils.FontDO;
 import org.apache.weex.utils.LogLevel;
@@ -42,21 +57,6 @@ import org.apache.weex.utils.WXLogUtils;
 import org.apache.weex.utils.WXSoInstallMgrSdk;
 import org.apache.weex.utils.WXUtils;
 import org.apache.weex.utils.WXViewUtils;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import dalvik.system.PathClassLoader;
-
-import static android.content.Context.MODE_PRIVATE;
 
 public class WXEnvironment {
 
@@ -564,6 +564,28 @@ public class WXEnvironment {
     return null;
   }
 
+  public static int memfd_create(String name, int size) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
+      return 0;
+    }
+
+    int fd = 0;
+    try {
+      Method memfd_create = Os.class.getMethod("memfd_create", String.class, int.class);
+      Object fd_object = memfd_create.invoke(null, name, 0);
+      if (fd_object instanceof FileDescriptor) {
+        Field descriptor = FileDescriptor.class.getDeclaredField("descriptor");
+        descriptor.setAccessible(true);
+        Object fd_int_object = descriptor.get(fd_object);
+        fd = Integer.parseInt(String.valueOf(fd_int_object));
+        descriptor.setAccessible(false);
+        Os.ftruncate((FileDescriptor) fd_object, size);
+      }
+    } catch (Throwable e) {
+      // do Nothing
+    }
+    return fd;
+  }
 
   public static String findSoPath(String libName) {
     String soPath = ((PathClassLoader) (WXEnvironment.class.getClassLoader())).findLibrary(libName);
