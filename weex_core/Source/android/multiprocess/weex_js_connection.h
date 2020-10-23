@@ -44,8 +44,8 @@ class WeexConnInfo {
   }
 
 
-  static int memfd_create_below_androidR(const char *name, size_t size);
-  static int memfd_create_androidR(const char *name, size_t size);
+  static int memfd_create_below_androidQ(const char *name, size_t size);
+  static int memfd_create_androidQ(const char *name, size_t size);
   static int memfd_create(const char *name, size_t size);
 
   void closeFd() {

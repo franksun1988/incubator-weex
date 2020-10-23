@@ -657,16 +657,16 @@ int WeexConnInfo::memfd_create(const char *name, size_t size) {
 
   int fd = 0;
   if (SoUtils::android_api() >= 29) {
-    fd = memfd_create_androidR(name, size);
+    fd = memfd_create_androidQ(name, size);
     if (fd != 0) {
       return fd;
     }
   }
-  return memfd_create_below_androidR(name, size);
+  return memfd_create_below_androidQ(name, size);
 }
 typedef int (*ASharedMemory_create_func_ptr)(const char *name, size_t size);
 typedef int (*ASharedMemory_setProt_func_ptr)(int fd, int prot);
-int WeexConnInfo::memfd_create_below_androidR(const char *name, size_t size) {
+int WeexConnInfo::memfd_create_below_androidQ(const char *name, size_t size) {
   static auto handle = dlopen("libandroid.so", RTLD_LAZY | RTLD_LOCAL);
   if (handle == RTLD_DEFAULT) {
     return -1;
@@ -691,9 +691,9 @@ int WeexConnInfo::memfd_create_below_androidR(const char *name, size_t size) {
   return -1;
 }
 
-int WeexConnInfo::memfd_create_androidR(const char *name, size_t size) {
+int WeexConnInfo::memfd_create_androidQ(const char *name, size_t size) {
   JNIEnv *env = base::android::AttachCurrentThread();
-  jclass wx_env = env->FindClass("com/taobao/weex/WXEnvironment");
+  jclass wx_env = env->FindClass("org/apache/weex/WXEnvironment");
   if (wx_env) {
     jmethodID m_memfd_create_id =
         env->GetStaticMethodID(wx_env, "memfd_create", "(Ljava/lang/String;I)I");
@@ -703,7 +703,7 @@ int WeexConnInfo::memfd_create_androidR(const char *name, size_t size) {
           env->CallStaticIntMethod(wx_env, m_memfd_create_id, env->NewStringUTF(name), (jint) size);
       __android_log_print(ANDROID_LOG_ERROR,
                           "dyy",
-                          "memfd_create_androidR %d  %s  %d",
+                          "memfd_create_androidQ %d  %s  %d",
                           i,
                           name,
                           size);
