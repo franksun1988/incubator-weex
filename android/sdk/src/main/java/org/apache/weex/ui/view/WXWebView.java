@@ -222,7 +222,7 @@ public class WXWebView implements IWebView {
         settings.setDomStorageEnabled(true);
         settings.setSupportZoom(false);
         settings.setBuiltInZoomControls(false);
-        settings.setAllowFileAccess(false);
+        settings.setAllowFileAccess(true);
         wv.setWebViewClient(new WebViewClient() {
 
             @Override
