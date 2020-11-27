@@ -63,7 +63,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class WXEnvironment {
 
-  public static final String OS = "android";
+  public static final String OS = "Android";
   public static String SYS_VERSION = android.os.Build.VERSION.RELEASE;
   static{
     if(SYS_VERSION != null && SYS_VERSION.toUpperCase(Locale.ROOT).equals("P")){
