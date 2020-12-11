@@ -18,8 +18,8 @@
  */
 buildscript {
     repositories {
-        google()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.0.0'
@@ -38,8 +38,8 @@ subprojects {
                 url external_repositories
             }
         }
-        google()
-        jcenter()
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
     }
     buildscript {
         dependencies {
@@ -47,15 +47,16 @@ subprojects {
             classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
         }
         repositories {
-            google()
-            jcenter()
+            maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+            maven { url 'https://maven.aliyun.com/nexus/content/groups/public' }
         }
     }
 }
 ext {
-    compileSdkVersion=28
+    compileSdkVersion=30
+    buildToolsVersion = '30.0.3'
     minSdkVersion=14
-    targetSdkVersion=28
+    targetSdkVersion=30
     supportLibVersion="28.0.0"
     fastjsonLibVersion="1.1.71.android"
     //Default value for disableCov is false
