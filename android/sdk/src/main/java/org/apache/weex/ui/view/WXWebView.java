@@ -84,6 +84,12 @@ public class WXWebView implements IWebView {
         root.setBackgroundColor(Color.WHITE);
 
         mWebView = new WebView(mContext);//mContext.getApplicationContext();
+        mWebView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                return true;
+            }
+        });
         FrameLayout.LayoutParams wvLayoutParams =
                 new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,
                         FrameLayout.LayoutParams.MATCH_PARENT);
